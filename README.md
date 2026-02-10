@@ -1,7 +1,7 @@
 # auto-api-client-ruby
 
 [![Gem Version](https://badge.fury.io/rb/auto-api-client.svg)](https://rubygems.org/gems/auto-api-client)
-[![Ruby](https://img.shields.io/badge/Ruby-2.5%2B-red)](https://www.ruby-lang.org)
+[![Ruby](https://img.shields.io/badge/Ruby-2.5%2B-red)](https://ruby-lang.org)
 [![License](https://img.shields.io/github/license/autoapicom/auto-api-ruby)](LICENSE)
 
 Ruby gem for the [auto-api.com](https://auto-api.com) car listings API — 8 marketplaces, one client.
@@ -63,7 +63,7 @@ next_batch = client.get_changes("encar", changes["meta"]["next_change_id"])
 ### Get offer by URL
 
 ```ruby
-info = client.get_offer_by_url("https://www.encar.com/dc/dc_cardetailview.do?carid=40427050")
+info = client.get_offer_by_url("https://encar.com/dc/dc_cardetailview.do?carid=40427050")
 ```
 
 ### Decode offer data
@@ -96,14 +96,14 @@ end
 
 | Source | Platform | Region |
 |--------|----------|--------|
-| `encar` | [encar.com](https://www.encar.com) | South Korea |
-| `mobilede` | [mobile.de](https://www.mobile.de) | Germany |
-| `autoscout24` | [autoscout24.com](https://www.autoscout24.com) | Europe |
-| `che168` | [che168.com](https://www.che168.com) | China |
-| `dongchedi` | [dongchedi.com](https://www.dongchedi.com) | China |
-| `guazi` | [guazi.com](https://www.guazi.com) | China |
-| `dubicars` | [dubicars.com](https://www.dubicars.com) | UAE |
-| `dubizzle` | [dubizzle.com](https://www.dubizzle.com) | UAE |
+| `encar` | [encar.com](https://encar.com) | South Korea |
+| `mobilede` | [mobile.de](https://mobile.de) | Germany |
+| `autoscout24` | [autoscout24.com](https://autoscout24.com) | Europe |
+| `che168` | [che168.com](https://che168.com) | China |
+| `dongchedi` | [dongchedi.com](https://dongchedi.com) | China |
+| `guazi` | [guazi.com](https://guazi.com) | China |
+| `dubicars` | [dubicars.com](https://dubicars.com) | UAE |
+| `dubizzle` | [dubizzle.com](https://dubizzle.com) | UAE |
 
 ## Other languages
 
