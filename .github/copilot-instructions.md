@@ -6,7 +6,7 @@ Ruby client library for [auto-api.com](https://auto-api.com).
 
 - `AutoApi::Client` class with 6 public methods for interacting with the Auto API
 - Zero external dependencies — uses only Ruby stdlib (net/http, json, uri)
-- Keyword arguments for optional filters: `get_offers("encar", page: 1, brand: "BMW")`
+- Hash params for optional filters: `get_offers("encar", page: 1, brand: "BMW")`
 - All methods return parsed Hashes — no wrapper or DTO classes
 - Error handling via `ApiError` and `AuthError` (both inherit from `StandardError`)
 

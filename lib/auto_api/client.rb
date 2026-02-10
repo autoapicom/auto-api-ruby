@@ -29,44 +29,9 @@ module AutoApi
     # Returns a paginated list of offers with optional filters.
     #
     # @param source [String] source platform name
-    # @param page [Integer] page number (required)
-    # @param brand [String, nil] filter by brand
-    # @param model [String, nil] filter by model
-    # @param configuration [String, nil] filter by configuration
-    # @param complectation [String, nil] filter by complectation
-    # @param transmission [String, nil] filter by transmission
-    # @param color [String, nil] filter by color
-    # @param body_type [String, nil] filter by body type
-    # @param engine_type [String, nil] filter by engine type
-    # @param year_from [Integer, nil] minimum year
-    # @param year_to [Integer, nil] maximum year
-    # @param mileage_from [Integer, nil] minimum mileage
-    # @param mileage_to [Integer, nil] maximum mileage
-    # @param price_from [Integer, nil] minimum price
-    # @param price_to [Integer, nil] maximum price
+    # @param params [Hash] query parameters (page, brand, model, etc.)
     # @return [Hash] { "result" => [...], "meta" => { "page" => ..., "next_page" => ... } }
-    def get_offers(source, page:, brand: nil, model: nil, configuration: nil,
-                   complectation: nil, transmission: nil, color: nil,
-                   body_type: nil, engine_type: nil,
-                   year_from: nil, year_to: nil,
-                   mileage_from: nil, mileage_to: nil,
-                   price_from: nil, price_to: nil)
-      params = { page: page }
-      params[:brand] = brand if brand
-      params[:model] = model if model
-      params[:configuration] = configuration if configuration
-      params[:complectation] = complectation if complectation
-      params[:transmission] = transmission if transmission
-      params[:color] = color if color
-      params[:body_type] = body_type if body_type
-      params[:engine_type] = engine_type if engine_type
-      params[:year_from] = year_from if year_from
-      params[:year_to] = year_to if year_to
-      params[:mileage_from] = mileage_from if mileage_from
-      params[:mileage_to] = mileage_to if mileage_to
-      params[:price_from] = price_from if price_from
-      params[:price_to] = price_to if price_to
-
+    def get_offers(source, params = {})
       get("api/#{@api_version}/#{source}/offers", params)
     end
 

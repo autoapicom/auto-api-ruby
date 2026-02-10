@@ -4,9 +4,9 @@
 [![Ruby](https://img.shields.io/badge/Ruby-2.5%2B-red)](https://www.ruby-lang.org)
 [![License](https://img.shields.io/github/license/autoapicom/auto-api-ruby)](LICENSE)
 
-Ruby client for [auto-api.com](https://auto-api.com) — car listings API across multiple marketplaces.
+Ruby gem for the [auto-api.com](https://auto-api.com) car listings API — 8 marketplaces, one client.
 
-One API to access car listings from 8 marketplaces: encar, mobile.de, autoscout24, che168, dongchedi, guazi, dubicars, dubizzle. Search offers, track price changes, and get listing data in a unified format.
+encar, mobile.de, autoscout24, che168, dongchedi, guazi, dubicars, dubizzle. No dependencies beyond stdlib (`net/http` + `json`).
 
 ## Installation
 
@@ -68,7 +68,7 @@ info = client.get_offer_by_url("https://www.encar.com/dc/dc_cardetailview.do?car
 
 ### Decode offer data
 
-Offer data varies between sources and is returned as a Hash:
+The `data` hash structure depends on the source — each marketplace has its own set of fields:
 
 ```ruby
 offers["result"].each do |item|

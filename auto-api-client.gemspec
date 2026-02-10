@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["support@auto-api.com"]
 
   spec.summary = "Ruby client for auto-api.com"
-  spec.description = "Ruby client for auto-api.com — car listings API across multiple marketplaces."
+  spec.description = "Access car listings from encar, mobile.de, autoscout24, che168 and other marketplaces via auto-api.com."
   spec.homepage = "https://github.com/autoapicom/auto-api-ruby"
   spec.license = "MIT"
 

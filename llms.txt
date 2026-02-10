@@ -15,7 +15,7 @@ offers = client.get_offers("encar", page: 1, brand: "BMW")
 ## API Methods
 
 - get_filters(source) — available filters (brands, models, body types)
-- get_offers(source, page:, **filters) — search listings with pagination and filters
+- get_offers(source, params = {}) — search listings with pagination and filters
 - get_offer(source, inner_id) — single listing by ID
 - get_change_id(source, date) — get change_id by date (yyyy-mm-dd)
 - get_changes(source, change_id) — changes feed (added/changed/removed)

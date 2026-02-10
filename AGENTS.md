@@ -35,7 +35,7 @@ ruby examples/example.rb
 
 - Ruby 2.5+, zero dependencies (net/http, json, uri from stdlib)
 - snake_case for everything — Ruby convention
-- Keyword arguments for optional parameters (page:, brand:, etc.)
+- Hash params for optional parameters: `get_offers("encar", page: 1, brand: "BMW")`
 - Returns parsed Hashes — Ruby convention, like PHP arrays and Python dicts
 - StandardError subclass — Ruby exception convention
 - attr_reader for exception properties
@@ -49,7 +49,7 @@ ruby examples/example.rb
 | Method | Params | Returns |
 |--------|--------|---------|
 | `get_filters(source)` | source name | `Hash` |
-| `get_offers(source, page:, **filters)` | source + keyword args | `Hash` |
+| `get_offers(source, params = {})` | source + hash params | `Hash` |
 | `get_offer(source, inner_id)` | source + inner_id | `Hash` |
 | `get_change_id(source, date)` | source + yyyy-mm-dd | `Integer` |
 | `get_changes(source, change_id)` | source + change_id | `Hash` |
