@@ -1,0 +1,33 @@
+# auto-api-client (Ruby)
+
+> Ruby client for auto-api.com — car listings API from 8 automotive marketplaces (encar, mobile.de, autoscout24, che168, dongchedi, guazi, dubicars, dubizzle).
+
+## Install
+
+gem install auto-api-client
+
+## Quick Start
+
+require "auto_api"
+client = AutoApi::Client.new("your-api-key")
+offers = client.get_offers("encar", page: 1, brand: "BMW")
+
+## API Methods
+
+- get_filters(source) — available filters (brands, models, body types)
+- get_offers(source, page:, **filters) — search listings with pagination and filters
+- get_offer(source, inner_id) — single listing by ID
+- get_change_id(source, date) — get change_id by date (yyyy-mm-dd)
+- get_changes(source, change_id) — changes feed (added/changed/removed)
+- get_offer_by_url(url) — listing data by marketplace URL
+
+## Auth
+
+- GET requests: api_key query parameter
+- POST /api/v1/offer/info: x-api-key header
+
+## Links
+
+- [Documentation](https://auto-api.com)
+- [Source Code](https://github.com/autoapicom/auto-api-ruby)
+- [README](https://github.com/autoapicom/auto-api-ruby/blob/main/README.md)
