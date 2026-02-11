@@ -42,6 +42,11 @@ pip-log.txt
 .pytest_cache/
 .ruff_cache/
 
+# Ruby
+*.gem
+pkg/
+Gemfile.lock
+
 # Go
 bin/
 vendor/

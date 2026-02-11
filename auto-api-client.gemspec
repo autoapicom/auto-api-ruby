@@ -17,7 +17,6 @@ Gem::Specification.new do |spec|
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/autoapicom/auto-api-ruby"
-  spec.metadata["changelog_uri"] = "https://github.com/autoapicom/auto-api-ruby/blob/main/CHANGELOG.md"
   spec.metadata["keywords"] = "encar api, mobile.de api, autoscout24 api, che168 api, dongchedi api, guazi api, dubicars api, dubizzle api"
 
   spec.files = Dir["lib/**/*.rb", "LICENSE", "README.md"]
