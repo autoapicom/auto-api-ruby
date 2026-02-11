@@ -19,6 +19,7 @@ offers = client.get_offers("encar", page: 1)
 
 ```bash
 bundle install
+gem build auto-api-client.gemspec
 ruby examples/example.rb
 ```
 
