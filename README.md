@@ -109,9 +109,9 @@ end
 
 | Language | Package |
 |----------|---------|
-| PHP | [auto-api/client](https://github.com/autoapicom/auto-api-php) |
-| TypeScript | [@auto-api/client](https://github.com/autoapicom/auto-api-node) |
-| Python | [auto-api-client](https://github.com/autoapicom/auto-api-python) |
+| PHP | [autoapi/client](https://github.com/autoapicom/auto-api-php) |
+| TypeScript | [@autoapicom/client](https://github.com/autoapicom/auto-api-node) |
+| Python | [autoapicom-client](https://github.com/autoapicom/auto-api-python) |
 | Go | [auto-api-go](https://github.com/autoapicom/auto-api-go) |
 | C# | [AutoApi.Client](https://github.com/autoapicom/auto-api-dotnet) |
 | Java | [auto-api-client](https://github.com/autoapicom/auto-api-java) |
