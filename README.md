@@ -1,8 +1,8 @@
 # auto-api-client-ruby
 
-[![Gem Version](https://badge.fury.io/rb/auto-api-client.svg)](https://rubygems.org/gems/auto-api-client)
+[![Gem Version](https://img.shields.io/gem/v/auto-api-client)](https://rubygems.org/gems/auto-api-client)
 [![Ruby](https://img.shields.io/badge/Ruby-2.5%2B-red)](https://ruby-lang.org)
-[![License](https://img.shields.io/github/license/autoapicom/auto-api-ruby)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 Ruby gem for the [auto-api.com](https://auto-api.com) car listings API — 8 marketplaces, one client.
 
