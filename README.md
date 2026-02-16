@@ -23,7 +23,7 @@ gem "auto-api-client"
 ## Usage
 
 ```ruby
-require "auto_api"
+require "auto_api" # not needed if using Bundler
 
 client = AutoApi::Client.new("your-api-key", "https://api1.auto-api.com")
 ```
