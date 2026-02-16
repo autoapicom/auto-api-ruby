@@ -25,7 +25,7 @@ gem "auto-api-client"
 ```ruby
 require "auto_api"
 
-client = AutoApi::Client.new("your-api-key")
+client = AutoApi::Client.new("your-api-key", "https://api1.auto-api.com")
 ```
 
 ### Get filters

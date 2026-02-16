@@ -6,7 +6,7 @@
 
 require_relative "../lib/auto_api"
 
-client = AutoApi::Client.new("your-api-key")
+client = AutoApi::Client.new("your-api-key", "https://api1.auto-api.com")
 source = "encar"
 
 # --- Get available filters ---
@@ -67,7 +67,7 @@ puts "#{info['mark']} #{info['model']} — $#{info['price']}"
 
 # --- Error handling ---
 
-bad_client = AutoApi::Client.new("invalid-key")
+bad_client = AutoApi::Client.new("invalid-key", "https://api1.auto-api.com")
 begin
   bad_client.get_offers("encar", page: 1)
 rescue AutoApi::AuthError => e

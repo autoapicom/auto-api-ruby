@@ -10,9 +10,9 @@ module AutoApi
     # Creates a new API client.
     #
     # @param api_key [String] API key from auto-api.com
+    # @param base_url [String] base URL (default: "https://api1.auto-api.com")
     # @param api_version [String] API version (default: "v2")
-    # @param base_url [String] base URL override (default: "https://auto-api.com")
-    def initialize(api_key, api_version: "v2", base_url: "https://auto-api.com")
+    def initialize(api_key, base_url = "https://api1.auto-api.com", api_version: "v2")
       @api_key = api_key
       @api_version = api_version
       @base_url = base_url.chomp("/")

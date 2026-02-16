@@ -11,7 +11,7 @@ gem install auto-api-client
 ```ruby
 require "auto_api"
 
-client = AutoApi::Client.new("your-api-key")
+client = AutoApi::Client.new("your-api-key", "https://api1.auto-api.com")
 offers = client.get_offers("encar", page: 1)
 ```
 
